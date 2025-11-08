@@ -2,7 +2,7 @@
 // IMPORTANT: Remplacez ces valeurs par vos propres clés EmailJS
 
 export const EMAILJS_CONFIG = {
-  // Votre Public Key depuis EmailJS Dashboard → Account → General
+  // Votre Public Key depuis EmailJS Dashboard → EmailJS Dashboard → Account → General
   publicKey: 'cFDz4jNHPg8DwemNb',
 
   // Votre Service ID depuis EmailJS Dashboard → Email Services
