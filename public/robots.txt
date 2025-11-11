@@ -1,0 +1,12 @@
+# robots.txt pour asbefore2023.com
+
+# Permettre à tous les robots d'accéder au site
+User-agent: *
+Allow: /
+
+# Bloquer l'accès aux fichiers sensibles si nécessaire
+Disallow: /api/
+Disallow: /.env
+
+# Indiquer l'emplacement du sitemap
+Sitemap: https://asbefore2023.com/sitemap.xml
