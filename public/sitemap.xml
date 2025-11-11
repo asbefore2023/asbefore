@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Page principale en hébreu -->
   <url>
-    <loc>https://asbefore2023.com/</loc>
+    <loc>https://asbefore2023.com/he</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://asbefore2023.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asbefore2023.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asbefore2023.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asbefore2023.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://asbefore2023.com/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asbefore2023.com/he"/>
   </url>
+
+  <!-- Page principale en anglais -->
+  <url>
+    <loc>https://asbefore2023.com/en</loc>
+    <lastmod>2025-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://asbefore2023.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asbefore2023.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asbefore2023.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asbefore2023.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://asbefore2023.com/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asbefore2023.com/he"/>
+  </url>
+
+  <!-- Page principale en français -->
+  <url>
+    <loc>https://asbefore2023.com/fr</loc>
+    <lastmod>2025-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://asbefore2023.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asbefore2023.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asbefore2023.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asbefore2023.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://asbefore2023.com/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asbefore2023.com/he"/>
+  </url>
+
+  <!-- Page principale en espagnol -->
+  <url>
+    <loc>https://asbefore2023.com/es</loc>
+    <lastmod>2025-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://asbefore2023.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asbefore2023.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asbefore2023.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asbefore2023.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://asbefore2023.com/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asbefore2023.com/he"/>
+  </url>
+
+  <!-- Page principale en russe -->
+  <url>
+    <loc>https://asbefore2023.com/ru</loc>
+    <lastmod>2025-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://asbefore2023.com/he"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asbefore2023.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asbefore2023.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asbefore2023.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://asbefore2023.com/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asbefore2023.com/he"/>
+  </url>
+
 </urlset>

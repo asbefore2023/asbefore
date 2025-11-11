@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 type Language = 'he' | 'en' | 'fr' | 'es' | 'ru';
 
@@ -10,9 +11,40 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+const VALID_LANGUAGES: Language[] = ['he', 'en', 'fr', 'es', 'ru'];
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('he');
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Extraire la langue depuis l'URL
+  const getLanguageFromPath = (): Language => {
+    const pathSegments = location.pathname.split('/').filter(Boolean);
+    const langFromPath = pathSegments[0] as Language;
+    if (VALID_LANGUAGES.includes(langFromPath)) {
+      return langFromPath;
+    }
+    return 'he'; // Langue par défaut
+  };
+
+  const [language, setLanguageState] = useState<Language>(getLanguageFromPath());
   const [customTranslations, setCustomTranslations] = useState<Record<Language, Record<string, string>>>({} as any);
+
+  // Synchroniser la langue avec l'URL
+  useEffect(() => {
+    const newLang = getLanguageFromPath();
+    if (newLang !== language) {
+      setLanguageState(newLang);
+    }
+  }, [location.pathname]);
+
+  // Fonction pour changer la langue et naviguer vers la nouvelle URL
+  const setLanguage = (lang: Language) => {
+    if (VALID_LANGUAGES.includes(lang)) {
+      setLanguageState(lang);
+      navigate(`/${lang}`);
+    }
+  };
 
   useEffect(() => {
     const loadCustomTranslations = () => {

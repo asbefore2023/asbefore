@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLanguage } from './contexts/LanguageContext';
+import SEO from './components/SEO';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AdvantagesSection from './components/AdvantagesSection';
@@ -17,16 +18,19 @@ function App() {
   }, [language]);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <HeroSection />
-      <AdvantagesSection />
-      <AboutSection />
-      <MethodologySection />
-      <CoursesSection />
-      <ApproachSection />
-      <Footer />
-    </div>
+    <>
+      <SEO />
+      <div className="min-h-screen bg-white">
+        <Header />
+        <HeroSection />
+        <AdvantagesSection />
+        <AboutSection />
+        <MethodologySection />
+        <CoursesSection />
+        <ApproachSection />
+        <Footer />
+      </div>
+    </>
   );
 }
 
